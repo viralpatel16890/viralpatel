@@ -43,9 +43,17 @@
 
     <mat-drawer-content>
         <span routerLink="" routerLinkActive="" [routerLinkActiveOptions]="{exact: true}" style="cursor: pointer;">
-            <img src="assets/img/viral-patel-studio-logo.svg">
+            <img src="assets/img/viral-patel-studio-logo.svg" class="onMobile">
         </span>
       <button mat-icon-button (click)="drawer.toggle()" class="toggle-mnn"><mat-icon>menu</mat-icon></button>
     </mat-drawer-content>
   </mat-drawer-container>
 </mat-toolbar>
+
+<style>
+    @media only screen and (max-width: 768px){
+        .onMobile{
+            margin-top: 12px;
+        }
+    }
+</style>
